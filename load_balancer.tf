@@ -4,6 +4,7 @@ resource "aws_launch_configuration" "website_launch_config" {
   image_id      = data.aws_ami.latest_amazon_linux2.id
   instance_type = "t2.micro"
   key_name = aws_key_pair.terraform_ssh_pair.key_name
+  user_data = file("script.sh")
 
   lifecycle {
     create_before_destroy = true
