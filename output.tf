@@ -1,4 +1,4 @@
-output "elastic_ip" {
-  description = "The elastic IP address of the public ec2 instance"
-  value       = aws_instance.website-server.public_ip
+output "alb_dns_name" {
+  description = "The dns name for the elastic load balancer"
+  value       = aws_lb.website_alb.dns_name
 }
