@@ -3,7 +3,7 @@
 # update vm and install server
 sudo yum -y update && sudo yum -y install httpd
 sudo systemctl start httpd && sudo systemctl enable httpd
-sudo echo "<h1>Deployed infrastructure for virtual coffe shop hosting</h1>" > /var/www/html/index.html
+sudo echo "<h1>Deployed infrastructure for virtual coffee shop hosting</h1>" > /var/www/html/index.html
 
 
 # install docker
